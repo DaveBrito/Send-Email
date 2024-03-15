@@ -40,7 +40,7 @@ Troque a de config também:
 define("SMTP_HOST"," smtp.gmail.com");              
 define("SMTP_PORT"," 587");                         //porta do google
 define("SMTP_USER"," naorespondaagr@gmail.com");    //email que irá fazer o envio
-define("SMTP_PASS","#######");     
+define("SMTP_PASS","#######");                      // coloque a senha aqui
 ```
 Coloque o e-mail que irá fazer o envio
 ```php

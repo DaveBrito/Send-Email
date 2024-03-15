@@ -1,35 +1,48 @@
 # Envio de Email
 Esse projeto tem o objetivo fazer envios de e-mails com php junto com a biblioteca Composer. 
 # Composer
-Cuidado, para conseguir instalar está biblioteca, será necessário o XAMPP como conector do Composer.
+Cuidado, para conseguir instalar está biblioteca, será necessário o XAMPP como conector do [Composer](https://getcomposer.org/download/).
 
-Link do [Composer](https://getcomposer.org/download/). Caso seu SO, seja Windowns, apenas clique no primeiro link para download. Outros tipos, Linux, Mac OS, é por via terminal.
+Caso seu SO, seja Windowns, apenas clique no primeiro link para download. Outros tipos, Linux, Mac OS, é por via terminal.
 
-Link do [XAMPP](https://www.apachefriends.org/download.html)
-
-O XAMPP é ultilizado porque já vem instalado o php junto com o software, mais simples e prático de fazer o download.
+O [XAMPP](https://www.apachefriends.org/download.html) é ultilizado porque já vem instalado o php junto com o software, mais simples e prático de fazer o download.
 
 # Como Iniciar
 
 - Após baixar os dois programas, será necessário acessar o github do PHPMailer para copiar o `scr` e colar em seu projeto. Caso queira fazer o passo-a-passo.
   
-- Para acessar o github do Composer, apenas navegue até 'vendor/phpmailer/phpmailer' deste projeto, chegando no fim das pastas, você irá encontrar a documentação oficial. Se não, [PHPMailer](https://github.com/PHPMailer/PHPMailer).
+- Para acessar o github do Composer, apenas navegue até `vendor/phpmailer/phpmailer` deste projeto, chegando no fim das pastas, você irá encontrar a documentação oficial. Se não, acesse-o [PHPMailer](https://github.com/PHPMailer/PHPMailer).
 - Só será necessário renomear o token de senha, e renomear o endereço de e-mail. Em breve irei comentar como fazer isso.
 - Após baixar em `zip` o projeto oficial do PHPMailer, apenas usaremos o `scr` do projeto, copie-o cole em seu projeto.
 - Crie o `index.php` e a pasta `includes` e o arquivo `config.php` dentro desta pasta.
 
-- # Onde Consigo o Token de Senha?
+  # Teste
+Crie um simples texto dentro do index:
+```php
+echo 'teste';
+```
+Caso deseja testar se o `index.php` está funcionando, entre o terminal do VsCode e digite:
+```php
+php -S localhost:8080
+```
+
+# Onde Consigo o Token de Senha?
 
 - Para conseguir a senha pra ter o acesso ao e-mail que irá fazer o envio, será necessário a opção de `verificação em duas etapas` ativado, e necessário criar um `senha para aplicativos` na conta google.
 - Crie um nome fácil para identificar.
 - Após feito essas duas etapas, copie a chave criada pelo google, e cole no $MAIL->PASSWORD = ' '; e troque também a senha dentro da pasta 'includes', o arquivo config.php.
   
 ```php
-
 $mail->PASSWORD = 'chave aqui';
 ```
-
-
+Troque a de config também:
+```php
+define("SMTP_HOST"," smtp.gmail.com");              
+define("SMTP_PORT"," 587");                         //porta do google
+define("SMTP_USER"," naorespondaagr@gmail.com");    //email que irá fazer o envio
+define("SMTP_PASS","#######");     
+```
+Coloque o e-mail que irá fazer o envio
 ```php
 $mail->Username   = 'email@gmail.com'; 
 ```

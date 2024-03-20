@@ -8,7 +8,7 @@ Para usar essa biblioteca, será necessário o [XAMPP](https://www.apachefriends
 
 - Caso queira fazer o passo-a-passo, será necessário acessar o github do [PHPMailer](https://github.com/PHPMailer/PHPMailer) para copiar o `scr`. 
   
-- Só será necessário renomear o token de senha, e renomear o endereço de e-mail. Em breve irei comentar como fazer isso.
+- Apenas será necessário renomear o token de senha, e renomear o endereço de e-mail. Em breve irei comentar como fazer isso.
   
 - Após baixar o `zip` do projeto PHPMailer, apenas usaremos o `scr` do projeto.
 - Crie o `index.php`, pasta `includes` e o arquivo `config.php` dentro desta pasta.

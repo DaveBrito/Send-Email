@@ -8,6 +8,7 @@ Para usar essa biblioteca, será necessário o [XAMPP](https://www.apachefriends
 
 # Como Iniciar ?
 
+
 1. Caso prefira um guia passo a passo, será necessário acessar o repositório do [PHPMailer no GitHub](https://github.com/PHPMailer/PHPMailer) para obter o código fonte.
 2. Após baixar o arquivo ZIP do projeto PHPMailer, extraia a pasta src do projeto.
   
